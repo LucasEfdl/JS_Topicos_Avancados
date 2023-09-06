@@ -22,3 +22,20 @@ Promise.all([sumResult, subtractResult]).then(results => {
     console.log(results)
 })
 ```
+
+É importante lembrar que as funções async também permitem rejeitar uma promise. Podemos fazer isso através do objeto global Promise e seu método .reject():
+
+```c
+async function asyncSum(a, b) {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return Promise.reject('arguments must be of type number')
+    }
+    return a + b
+}
+
+asyncSum(50, null).then(result => {
+    console.log(result)
+}).catch(err => {
+    console.log(err)
+})
+```
