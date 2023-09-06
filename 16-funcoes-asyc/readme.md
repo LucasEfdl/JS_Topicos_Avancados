@@ -8,3 +8,17 @@ async function asyncSum(a, b) {
 asyncSum(1, 1).then(result => console.log(`1 + 1 é igual a ${result}`))
 ```
 
+Podemos ver através do exemplo da anterior que elas funcionam da mesma forma, mesmo quando utilizamos o Promise.all():
+
+```c
+async function asyncSubtract(a, b) {
+    return a - b
+}
+
+const sumResult = asyncSum(50, 33)
+const subtractResult = asyncSubtract(50, 33)
+
+Promise.all([sumResult, subtractResult]).then(results => {
+    console.log(results)
+})
+```
