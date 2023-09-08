@@ -1,48 +1,49 @@
-#Arquitetura Cliente Servidor 
+# Arquitetura Cliente Servidor 
 
-##Exemplo de Requisição
+## Exemplo de Requisição
+<div aling="center" >
+    <img src="./exemplo-de-requisicao.png"/>
+</div>
 
-<img aling="center" src="./exemplo-de-requisicao.png"/>
-
-##Cliente
+## Cliente
 Geralmente é um navegador web que envia requisições a um servidor
 
-##Servdor
+## Servdor
 Geralmente uma maquina acessivel pela internet que recebe a requisição,
 a processa e envia de volta uma resposta para o cliente.
 
 
-#Caracteristicas do HTTP
+# Caracteristicas do HTTP
 
-##Simples
+## Simples
 FAcil de entender e ultilizar 
 
-##Extensivel
+## Extensivel
 Permite adicionar novas funcionalidade facilmente
 
-##Stateless
+## Stateless
 Ou sem estado (mas com sessão)
 
 
-#Estrutura das mensagens 
+# Estrutura das mensagens 
 
-##Requisição
+## Requisição
 
-###Método
+### Método
 Define o tipo de operação a ser realizada (GET, POST, OPTIONS, HEAD, etc)
 
-###Caminho
+### Caminho
 O caminho do recurso a ser obtido, basicamente a URL do recurso sem a parte
 inicial (potocolo, domino e porta)
 
-###Versão
+### Versão
 O protocolo HTTP possui diferentes versões, com suas respectivas particularidades, 
 logo é preciso definir a versão que se está utilizando
 
-###Cabeçalho
+### Cabeçalho
 Informações adicionais entre cliente e servidor
 
-###Corpo
+### Corpo
 Conteudo da mensagens, usada por exemplo, ao enviar dados via POST. 
 
-##Respostas
+## Respostas
