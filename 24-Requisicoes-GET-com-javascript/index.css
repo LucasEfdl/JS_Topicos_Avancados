@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: #b58f8f;
+}
+h1{
+    padding-top: .75rem;
+    text-align: center;
+}
 
 #country{
     display: flex;
@@ -12,10 +19,14 @@
 }
 
 .country{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: #bbbaba;
     margin: 1rem;
     padding: 1rem 1.5rem;
-    width: 11rem;
+    width: 20rem;
 }
 
 .country h2 {
@@ -23,6 +34,6 @@
 }
 
 .country img{
-    width: 8rem;
+    width: 11rem;
     height: auto;
 }
