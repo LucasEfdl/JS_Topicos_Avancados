@@ -14,13 +14,13 @@
 # Caracteristicas do HTTP
 
 ## Simples
-FAcil de entender e ultilizar 
+    Facil de entender e ultilizar 
 
 ## Extensivel
-Permite adicionar novas funcionalidade facilmente
+    Permite adicionar novas funcionalidade facilmente
 
 ## Stateless
-Ou sem estado (mas com sessão)
+    Ou sem estado (mas com sessão)
 
 
 # Estrutura das mensagens 
@@ -43,3 +43,26 @@ Ou sem estado (mas com sessão)
     Conteudo da mensagens, usada por exemplo, ao enviar dados via POST. 
 
 ## Respostas
+
+### Código e mensagen de status
+    Umcódigo e uma breve descrição que indeicam se a requisição foi bem sucessida ou não (e o motivo)
+
+    Exemplo:
+    200, sucesso
+    301, rediricionamento (movido permanentemente)
+    404, não encontrado
+    500, erro interno do servidor
+
+### Versão 
+    Versão do protocolo como nas requisições
+
+### Cabeçalho
+    Informações adcionais entre cliente e servidor, como nas requisições
+
+### Corpo
+    Opcionamente pode assumir um corpo, que é o conteudo da mensagem (como uma pagina HTML ou um documento JSON)
+
+# Exemplos
+    Quando digitamos um endereço de um site no navegador estamos enviandi uma requisição que receberar a resposta com um documento HTML
+
+    Quando solicitamos informações a uma API Restfull enviamos uma requisição que receberá uma resposta contendo um documento JSON
